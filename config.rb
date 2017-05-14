@@ -1,5 +1,6 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
+activate :livereload, apply_css_live: true
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
@@ -12,6 +13,7 @@ end
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page "/styleguide", layout: true
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'

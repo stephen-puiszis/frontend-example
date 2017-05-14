@@ -1,0 +1,44 @@
+// Card Colors
+$card-bg: $white;
+$card-header-color: $black;
+$card-subhead-color: $grey-dark;
+$card-subtitle-color: $grey-darker;
+
+// TODO: Add hover effect
+.card {
+  @include span(3 of 12);
+  display: block;
+  text-align: center;
+
+  // TODO: images should be a little smaller for products
+  img { max-width: 100%; }
+  p { margin: 0; }
+
+  .card-inner {
+    background-color: $card-bg;
+    margin: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .card-header {
+    font-weight: 700;
+    color: $card-header-color;
+    padding-bottom: 0.25rem;
+  }
+
+  .card-subhead {
+    color: $card-subhead-color;
+  }
+
+  .card-text {
+    color: $card-subtitle-color;
+  }
+}
+
+.card-recipe {
+  @include span(4 of 12);
+
+  .card-inner {
+    min-height: 250px;
+  }
+}

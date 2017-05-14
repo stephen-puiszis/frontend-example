@@ -1,0 +1,26 @@
+$callout-border-radius: $border-radius * 3;
+
+.callout {
+  margin: 0 5rem;
+  text-align: center;
+  border-radius: $callout-border-radius;
+  border: 0.1rem dashed;
+
+  .callout-body {
+    margin: 2.5rem 0;
+
+    h2 {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.callout-light {
+  background-color: $yellow;
+
+  .callout-body {
+    h2 {
+      color: $white;
+    }
+  }
+}

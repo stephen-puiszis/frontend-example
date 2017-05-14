@@ -1,1 +1,133 @@
-%h1 Hello
+.container
+  %ul.nav.nav-bg-white
+    %li.nav-link
+      %a Department
+    %li.nav-link
+      %a Coupons
+    %li.nav-link
+      %a Help
+    %li.nav-link
+      %a Refer a Friend
+
+  .hero
+    .hero-inner
+      %h1 A grocery delivery service you can afford
+
+      %form.form-inline
+        %input.search{ placeholder: "Search for Groceries"}
+        %a.btn.btn-primary Shop Now
+
+  .section.m-t-0.p-y-1.bg-white
+    .media-group
+      .media.m-y-1
+        = image_tag "icons/delivery.png", class: "media-img"
+        .media-text
+          %strong.text-uppercase Free Delivery
+          %small.text-grey Spend over $35 on groceries and your delivery is free
+      .media.m-y-1
+        = image_tag "icons/phone.png", class: "media-img"
+        .media-text
+          %strong.text-uppercase Easy Ordering
+          %small.text-grey Simple to use on any device, wherever you you may be
+      .media.m-y-1
+        = image_tag "icons/gift-box.png", class: "media-img"
+        .media-text
+          %strong.text-uppercase Earn Rewards
+          %small.text-grey Build points with every delivery for discounts and more
+
+
+  .section.m-t-2
+    %h6.section-title Today's Trending Products
+
+    // TODO: It might make sense to put this into a .card-group
+    .card.card-product
+      .card-inner
+        = image_tag "products/lime-large.jpg"
+        %p.card-header $0.40
+        %p.card-subhead Mexican Limes
+        %small.card-text each
+
+    .card.card-product
+      .card-inner
+        = image_tag "products/egg-large.png"
+        %p.card-header $3.25
+        %p.card-subhead Organic Eggs
+        %small.card-text each
+
+    .card.card-product
+      .card-inner
+        = image_tag "products/garlic-large.jpg"
+        %p.card-header $0.25
+        %p.card-subhead Garlic
+        %small.card-text each
+
+    .card.card-product
+      .card-inner
+        = image_tag "products/lacroix-large.jpg"
+        %p.card-header $4.25
+        %p.card-subhead LaCroix
+        %small.card-text each
+
+  .section
+    %a.btn.btn-primary All Products
+
+  .section
+    %h4.quote.m-x-3 "I always thought that getting groceries delilvered would be too expensive, not so with Paper or Plastic. They’re great!"
+    .media
+      = image_tag "http://placehold.it/90x90", class: "img-circle img-profile"
+      .media-text
+        %strong Jane Smith
+        %small.text-grey Member since 2005
+
+  .section
+    // TODO: Get this outline working
+    .callout.callout-light
+      .callout-body
+        %h2.m-b-0 20% off Your First Order
+        %p.m-t-0 Take us for a test run and get 20% off of your first order. New customers only.
+
+        %a.btn.btn-white
+          %span.text-bold Promo Code: Test Run
+
+  .section
+    %h2.m-b-0 Need help with dinnertime?
+    %p.m-t-0 We’ve got you covered with custom orders to create weeknight dishes to impress the whole family.
+
+    .card.card-recipe
+      .card-inner
+        = image_tag "receipes/oatmeal.png"
+        %p.card-header Slow Cooked Steel Oats
+        = partial "layouts/rating"
+
+    .card.card-recipe
+      .card-inner
+        = image_tag "receipes/oatmeal.png"
+        %p.card-header Slow Cooked Steel Oats
+        = partial "layouts/rating"
+
+    .card.card-recipe
+      .card-inner
+        = image_tag "receipes/oatmeal.png"
+        %p.card-header Slow Cooked Steel Oats
+        = partial "layouts/rating"
+
+    .card.card-recipe
+      .card-inner
+        = image_tag "receipes/oatmeal.png"
+        %p.card-header Slow Cooked Steel Oats
+        = partial "layouts/rating"
+
+    .card.card-recipe
+      .card-inner
+        = image_tag "receipes/oatmeal.png"
+        %p.card-header Slow Cooked Steel Oats
+        = partial "layouts/rating"
+
+    .card.card-recipe
+      .card-inner
+        = image_tag "receipes/oatmeal.png"
+        %p.card-header Slow Cooked Steel Oats
+        = partial "layouts/rating"
+
+  .section.m-b-3
+    %a.btn.btn-primary All Recipes

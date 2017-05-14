@@ -1,0 +1,26 @@
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);
+
+.container {
+  @include container(1180px);
+}
+
+.section {
+  @include span(12 of 12);
+  margin: 1rem 0;
+  text-align: center;
+
+  .section-title {
+    margin: 1rem;
+    text-transform: uppercase;
+  }
+
+  .section-footer {
+    text-align: center;
+  }
+}

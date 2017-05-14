@@ -1,0 +1,67 @@
+// Nav Colors
+$navbar-background-color: $magenta;
+$navbar-link-color: $white;
+$navbar-header-color: $black;
+
+.navbar {
+  width: 100%;
+  background-color: $navbar-background-color;
+  color: $navbar-link-color;
+
+  .navbar-inner {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .logo {
+    margin: 1rem 0;
+    display: inline-block;
+    background: image-url("logo.svg");
+    // background-size: cover;
+    // background-position: center center;
+    min-width: 250px;
+  }
+}
+
+.nav {
+  list-style-type: none;
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+
+  .nav-link {
+    display: inline-block;
+    letter-spacing: 0.15rem;
+    padding: 0.5rem;
+
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: inherit;
+      font-weight: 500;
+      font-size: 0.8rem;
+
+      // TODO: improve this hover effect
+      &:hover { text-decoration: underline; }
+    }
+
+    a.btn {
+      &:hover { text-decoration: none }
+    }
+  }
+}
+
+.nav-bg-white {
+  background-color: $white;
+  color: $grey-dark;
+}
+
+.nav-bg-maroon {
+  color: $navbar-link-color;
+}
+
+.nav-right {
+  float: right;
+}
+

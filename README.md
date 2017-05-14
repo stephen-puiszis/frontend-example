@@ -24,3 +24,9 @@ bundle exec middleman build
 ```
 
 TODO: Add S3 Uploading
+
+
+### TODOs
+
+- Make images consistent (all png)
+- Improve the font stack and fallbacks

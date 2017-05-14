@@ -1,0 +1,50 @@
+// Buttons
+$btn-primary-color: $green;
+$btn-secondary-color: $yellow;
+$btn-grey-color: $grey-dark;
+$border-radius: 0.25rem;
+$text-color: $white;
+
+@mixin btn-hover-darken($color, $percent: 20%) {
+  &:hover { background-color: darken($color, $percent); }
+}
+
+a.btn {
+  &:hover {
+    text-decoration: none;
+    color: $text-color;
+  }
+}
+
+.btn {
+  padding: 0.75rem 1rem;
+  margin: 1rem;
+  border-radius: $border-radius;
+  color: $text-color;
+  font-size: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: $btn-primary-color;
+  @include btn-hover-darken($btn-primary-color);
+}
+
+.btn-secondary {
+  background-color: $btn-secondary-color;
+  @include btn-hover-darken($btn-secondary-color);
+}
+
+.btn-grey {
+  background-color: $btn-grey-color;
+  @include btn-hover-darken($btn-grey-color);
+}
+
+.btn-white {
+  background-color: $white;
+  color: $grey-dark;
+  @include btn-hover-darken($white);
+}

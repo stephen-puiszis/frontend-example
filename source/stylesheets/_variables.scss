@@ -1,0 +1,18 @@
+// Base Colors
+$white: #FFFFFF;
+$yellow: #FFC305;
+$green: #8FD295;
+$magenta: #6E4961;
+$grey: #EAEAEA;
+$grey-darker: #9B9B9B;
+$grey-dark: #4A4A4A;
+$black: #3C3D41;
+
+// Fonts and Typography
+@import url('https://fonts.googleapis.com/css?family=Cherry+Swash|Montserrat:300,400,500,600,700');
+$base-font-family:'Montserrat', 'Helvetica Nueu', sans-serif;
+$decorative-font-family: 'Cherry Swash', cursive;
+
+$font-size-base: 1rem !default; // Assumes a default of `16px`
+$font-weight-base: normal !default;
+$line-height-base: 1.5 !default;

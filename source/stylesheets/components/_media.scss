@@ -1,0 +1,39 @@
+// TODO: rename this file, it's not great.
+.media {
+  .media-img {
+    display: inherit;
+    max-height: 75px;
+  }
+
+  .media-text {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+      margin: 0 1rem;
+
+    small {
+      display: block;
+      text-align: left;
+      font-weight: 300;
+    }
+  }
+}
+
+// TODO: use flex box instead
+.media-group {
+  .media {
+    display: inline-block;
+    @include span(4 of 12);
+
+    .media-img {
+      display: block;
+      float: left;
+      margin: 0 1rem 1rem 0;
+    }
+
+    .media-text {
+      display: block;
+    }
+  }
+}
+

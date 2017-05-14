@@ -7,7 +7,6 @@
 %html
   = partial "layouts/head"
   %body
-    =# partial "layouts/sidebar"
-    .main{ role: "main" }
-      = yield
-    =# partial "layouts/footer"
+    = partial "layouts/nav"
+    = yield
+    = partial "layouts/footer"
