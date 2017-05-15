@@ -13,13 +13,17 @@ $navbar-header-color: $black;
     width: 100%;
   }
 
+  // FIXME: This should be a calculation
   .logo {
     margin: 1rem 0;
     display: inline-block;
-    background: image-url("logo.svg");
-    // background-size: cover;
-    // background-position: center center;
-    min-width: 250px;
+    mask: image-url("logo.svg");
+    background-color: white;
+    background-size: cover;
+    background-position: center center;
+    width: 240px;
+    height: 36px;
+    color: $white;
   }
 }
 
@@ -56,12 +60,3 @@ $navbar-header-color: $black;
   background-color: $white;
   color: $grey-dark;
 }
-
-.nav-bg-maroon {
-  color: $navbar-link-color;
-}
-
-.nav-right {
-  float: right;
-}
-

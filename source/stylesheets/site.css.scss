@@ -1,7 +1,6 @@
 // Files to Import
 @import "normalize";
 @import "susy";
-// @import "vendor/font-awesome-4.7.0/scss/font-awesome"; // TODO: Improve this st
 @import "variables";
 @import "grid";
 @import "typography";
@@ -15,7 +14,6 @@
 @import "components/quotes";
 @import "components/media";
 @import "components/ratings";
-@import "components/footer";
 
 .pull-right {
   float: right;
@@ -41,6 +39,7 @@
   text-transform: uppercase;
 }
 
+// TODO: Meta-program these utlitiy classes.
 // Margin Top Utilities
 .m-t-0 { margin-top: 0; }
 .m-t-1 { margin-top: 1rem; }
@@ -53,18 +52,19 @@
 .m-b-2 { margin-bottom: 2rem; }
 .m-b-3 { margin-bottom: 3rem; }
 
-// Margin X-Axis Utilities
+// Margin X and Y Axis Utilities
 .m-x-3 {
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
-// Margin Y-Axis Utilities
 .m-y-1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-// Padding Top Utilities
+
+// Padding Utilities
+.p-b-3 { padding-bottom: 3rem; }
 .p-t-3 {
   padding-top: 3rem;
 }

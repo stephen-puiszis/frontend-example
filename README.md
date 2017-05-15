@@ -1,4 +1,4 @@
-# Frontend Example
+# Frontend Example Code
 
 ### Dependencies
 
@@ -7,26 +7,27 @@
 
 ### Setup
 
-After cloning, run `bundle install`.
+```
+git clone git@github.com:stephen-puiszis/frontend-example.git
+bundle install
+```
 
-To run the "server", aka hot-reloading for development purposes:
+### "Running the Server"
+
+Middleman is a static site geneator so there is no server, but in development
+the build processes acts like one, using hot-reloading for faster rebuliding:
 
 ```
-bundle exec middleman
+bundle exec middleman sever
 ```
 
 ### Deployment
 
-To build the production static site:
+To create the static site, which does a lot of stuff to optimize for speed
+(including minifying html):
 
 ```
 bundle exec middleman build
 ```
 
-TODO: Add S3 Uploading
-
-
-### TODOs
-
-- Make images consistent (all png)
-- Improve the font stack and fallbacks
+TODO: Add S3 uploading process
